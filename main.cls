@@ -1,10 +1,10 @@
 % ============================================================
-% 全国大学生数学建模竞赛 LaTeX 文档类模板
+% 山东省大学生数学建模竞赛 LaTeX 文档类模板
 % ============================================================
 % 基于 CUMCMThesis 适配，支持 chapters/ 目录管理结构
 % ============================================================
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{main}[2026/03/26 v1.0 全国大学生数学建模竞赛模板]
+\ProvidesClass{main}[2026/03/26 v1.0 山东省大学生数学建模竞赛模板]
 
 %% ------------------------------------------------------------
 %% 选项处理
@@ -313,6 +313,8 @@
 \newcommand\mcm@tokens@keywords{}
 
 \renewenvironment{abstract}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{\abstractname}%
     \if@twocolumn
         \section*{\abstractname}%
     \else
@@ -368,16 +370,16 @@
 %% 承诺书常量
 %% ------------------------------------------------------------
 \newcommand*\mcm@commit@string@headname{赛区评阅编号（由赛区组委会填写）：}
-\newcommand*\mcm@commit@string@titlea{\the\year 高教社杯全国大学生数学建模竞赛}
+\newcommand*\mcm@commit@string@titlea{\the\year 山东省大学生数学建模竞赛}
 \newcommand*\mcm@commit@string@titleb{承\hspace{1em}诺\hspace{1em}书}
 \newcommand\mcm@commit@string@contents{\quotation
-我们仔细阅读了《全国大学生数学建模竞赛章程》和《全国大学生数学建模竞赛参赛规则》（以下简称"竞赛章程和参赛规则"，可从http://www.mcm.edu.cn下载）。
+我们仔细阅读了《山东省大学生数学建模竞赛章程》和《山东省大学生数学建模竞赛参赛规则》（以下简称"竞赛章程和参赛规则"）。
 
 我们完全清楚，在竞赛开始后参赛队员不能以任何方式，包括电话、电子邮件、"贴吧"、QQ群、微信群等，与队外的任何人（包括指导教师）交流、讨论与赛题有关的问题；无论主动参与讨论还是被动接收讨论信息都是严重违反竞赛纪律的行为。
 
 {\bfseries\song 我们以中国大学生名誉和诚信郑重承诺，严格遵守竞赛章程和参赛规则，以保证竞赛的公正、公平性。如有违反竞赛章程和参赛规则的行为，我们将受到严肃处理。}
 
-我们授权全国大学生数学建模竞赛组委会，可将我们的论文以任何形式进行公开展示（包括进行网上公示，在书籍、期刊和其他媒体进行正式或非正式发表等）。
+我们授权山东省大学生数学建模竞赛组委会，可将我们的论文以任何形式进行公开展示（包括进行网上公示，在书籍、期刊和其他媒体进行正式或非正式发表等）。
 \endquotation
 }
 \newcommand*\mcm@commit@string@problemnum{我们参赛选择的题号（从A/B/C/D/E中选择一项填写）：}
@@ -401,16 +403,16 @@
 %% ------------------------------------------------------------
 \newcommand*\mcm@numberpage@string@headname{赛区评阅编号：}
 \newcommand*\mcm@numberpage@string@headnameb{（由赛区填写）}
-\newcommand*\mcm@numberpage@string@allcountrynum{全国评阅编号：}
-\newcommand*\mcm@numberpage@string@allcountrynumb{（全国组委会填写）}
-\newcommand*\mcm@numberpage@string@titlea{\the\year 高教社杯全国大学生数学建模竞赛}
+\newcommand*\mcm@numberpage@string@allcountrynum{省评阅编号：}
+\newcommand*\mcm@numberpage@string@allcountrynumb{（省组委会填写）}
+\newcommand*\mcm@numberpage@string@titlea{\the\year 山东省大学生数学建模竞赛}
 \newcommand*\mcm@numberpage@string@titleb{编\hspace{.5em}号\hspace{.5em}专\hspace{.5em}用\hspace{.5em}页}
 \newcommand*\mcm@numberpage@string@appraiselog{赛区评阅记录（可供赛区评阅时使用）：}
 \newcommand\mcm@numberpage@string@reviewer{\shortstack{评\\ 阅\\ 人}}
 \newcommand\mcm@numberpage@string@remarks{\shortstack{备\\ 注}}
-\newcommand*\mcm@numberpage@string@countrynum{送全国评阅统一编号:\\ \hspace*{2em}（赛区组委会填写）}
+\newcommand*\mcm@numberpage@string@countrynum{送省评阅统一编号:\\ \hspace*{2em}（赛区组委会填写）}
 \newcommand\mcm@numberpage@string@inform{\quotation
-\noindent（{\bfseries\kai 请勿改动此页内容和格式。此编号专用页仅供赛区和全国评阅使用，参赛队打印后装订到纸质论文的第二页上。
+\noindent（{\bfseries\kai 请勿改动此页内容和格式。此编号专用页仅供赛区评阅使用，参赛队打印后装订到纸质论文的第二页上。
 注意电子版论文中不得出现此页。}）
 \endquotation
 }

@@ -4,7 +4,7 @@
 
 ## 项目说明
 
-本项目是**全国大学生数学建模竞赛（CUMCM）**的LaTeX模板，基于 `cumcmthesis.cls` 改造，适配了 `chapters/` 目录管理结构。
+本项目是**山东省大学生数学建模竞赛**的LaTeX模板，基于 `cumcmthesis.cls` 改造，适配了 `chapters/` 目录管理结构。
 
 ## 约定
 
@@ -17,7 +17,7 @@ COMPILE_CMD: tectonic -X compile main.tex
 ```
 .
 ├── main.tex              # 论文主文件（入口）
-├── main.cls              # 文档类文件（CUMCM 模板核心）
+├── main.cls              # 文档类文件（山东省赛模板核心）
 ├── main.pdf              # 编译输出
 ├── references.bib        # 参考文献数据库
 ├── cumcmthesis.cls       # 原始 CUMCM 模板（参考用）
