@@ -1,0 +1,59 @@
+% ============================================================
+% 第五章 模型的建立与求解
+% ============================================================
+
+\section{模型的建立与求解}
+
+\subsection{问题一的模型建立与求解}
+
+\subsubsection{模型建立}
+
+数学建模必然涉及不少数学公式的使用。如果希望某个公式带编号，并且在后文中引用可以参考下面的写法：
+\begin{equation}
+	E=mc^2
+	\label{eq:energy}
+\end{equation}
+式\cref{eq:energy}是质能方程。
+
+多行公式有时候希望能够在特定的位置对齐，以下是其中一种处理方法。
+\begin{align}
+	P & = UI \\
+	& = I^2R
+\end{align}
+
+矩阵的输入也不难。
+\[
+\mathbf{X} = \left(
+    \begin{array}{cccc}
+    x_{11} & x_{12} & \ldots & x_{1n}\\
+    x_{21} & x_{22} & \ldots & x_{2n}\\
+    \vdots & \vdots & \ddots & \vdots\\
+    x_{n1} & x_{n2} & \ldots & x_{nn}\\
+    \end{array} \right)
+\]
+
+分段函数这些可以用 \verb|cases| 环境，但是它要放在数学环境里面。
+\[
+f(x) =
+    \begin{cases}
+        0 &  x \text{为无理数} ,\\
+        1 &  x \text{为有理数} .
+    \end{cases}
+\]
+
+\begin{theorem}
+	这是一个定理。
+	\label{thm:example}
+\end{theorem}
+
+\begin{proof}
+	这是一个证明。
+\end{proof}
+
+\subsubsection{模型求解}
+
+描述求解算法与步骤，可配合流程图或伪代码进行说明。
+
+\subsection{问题二的模型建立与求解}
+
+\subsection{问题三的模型建立与求解}
